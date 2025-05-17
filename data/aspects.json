@@ -1,0 +1,110 @@
+[
+  {
+    "name_tr": "Kavuşum",
+    "name_en": "Conjunction",
+    "degree": 0,
+    "orb": 8,
+    "nature": {"tr": "Nötr", "en": "Neutral"},
+    "symbol": "☌",
+    "description_tr": "Kavuşum açısı, iki gezegenin aynı derecede buluşmasıdır. Enerjilerin birleştiği noktada güçlü odaklanma ve potansiyel uyum sağlar.",
+    "description_en": "The conjunction aspect occurs when two planets meet at the same degree. It creates strong focus and potential harmony by merging energies.",
+    "keywords_tr": ["Bütünleşme", "Güç", "Yeni başlangıçlar"],
+    "keywords_en": ["Integration", "Power", "New beginnings"]
+  },
+  {
+    "name_tr": "Altmışlık",
+    "name_en": "Sextile",
+    "degree": 60,
+    "orb": 6,
+    "nature": {"tr": "Harmonik", "en": "Harmonious"},
+    "symbol": "⚹",
+    "description_tr": "Altmışlık açısı, iki gezegen arasında 60 derecelik uyumlu bir açı oluşturur. Fırsatları ve doğal yetenekleri destekler.",
+    "description_en": "The sextile aspect forms a 60-degree harmonious angle between two planets. It supports opportunities and natural talents.",
+    "keywords_tr": ["Fırsat", "İletişim", "Yetenek"],
+    "keywords_en": ["Opportunity", "Communication", "Talent"]
+  },
+  {
+    "name_tr": "Kare",
+    "name_en": "Square",
+    "degree": 90,
+    "orb": 8,
+    "nature": {"tr": "Zorlayıcı", "en": "Challenging"},
+    "symbol": "□",
+    "description_tr": "Kare açısı, gezegenler arasında 90 derecelik gerilimli bir açı oluşturur. Zorluk ve çatışma yoluyla büyümeyi teşvik eder.",
+    "description_en": "The square aspect creates a 90-degree tense angle between planets. It promotes growth through challenges and conflict.",
+    "keywords_tr": ["Gerilim", "Meydan okuma", "Büyüme"],
+    "keywords_en": ["Tension", "Challenge", "Growth"]
+  },
+  {
+    "name_tr": "Üçgen",
+    "name_en": "Trine",
+    "degree": 120,
+    "orb": 8,
+    "nature": {"tr": "Harmonik", "en": "Harmonious"},
+    "symbol": "△",
+    "description_tr": "Üçgen açısı, iki gezegen arasında 120 derecelik akıcı bir açı kurar. Kaygan ve destekleyici bir enerji akışı sağlar.",
+    "description_en": "The trine aspect creates a smooth 120-degree angle between two planets. It ensures a flowing, supportive energy.",
+    "keywords_tr": ["Uyum", "Akış", "Yetenek"],
+    "keywords_en": ["Harmony", "Flow", "Ease"]
+  },
+  {
+    "name_tr": "Karşıt",
+    "name_en": "Opposition",
+    "degree": 180,
+    "orb": 8,
+    "nature": {"tr": "Zorlayıcı", "en": "Challenging"},
+    "symbol": "☍",
+    "description_tr": "Karşıt açı, gezegenler arasında tam karşıtlık oluşturarak 180 derecelik bir denge ve zıtlık sunar. İlişkilerde ayna etkisi yaratır.",
+    "description_en": "The opposition aspect places planets 180 degrees apart, offering balance and polarity. It creates a mirror effect in relationships.",
+    "keywords_tr": ["Zıtlık", "Denge", "İlişkiler"],
+    "keywords_en": ["Polarity", "Balance", "Relationships"]
+  },
+  {
+    "name_tr": "Yarım altmışlık",
+    "name_en": "Semi-sextile",
+    "degree": 30,
+    "orb": 2,
+    "nature": {"tr": "Nötr", "en": "Neutral"},
+    "symbol": "*",
+    "description_tr": "Yarım altmışlık açı, 30 derecelik küçük bir uyum sağlar. Gizli destek ve hafif akışkanlık sunar.",
+    "description_en": "The semi-sextile aspect at 30 degrees offers mild harmony. It provides subtle support and gentle flow.",
+    "keywords_tr": ["Destek", "Hafif uyum", "Fırsat"],
+    "keywords_en": ["Support", "Mild harmony", "Potential"]
+  },
+  {
+    "name_tr": "Yarım kare",
+    "name_en": "Semi-square",
+    "degree": 45,
+    "orb": 3,
+    "nature": {"tr": "Zorlayıcı", "en": "Challenging"},
+    "symbol": "*",
+    "description_tr": "Yarım kare açı, 45 derecelik gerilimli bir enerji sunar. Ufak çaplı sürtüşmeler ve rahatsızlık hissi yaratır.",
+    "description_en": "The semi-square aspect at 45 degrees delivers tension. It causes minor frictions and discomfort.",
+    "keywords_tr": ["Gerilim", "Rahatsızlık", "Değişim"],
+    "keywords_en": ["Tension", "Discomfort", "Catalyst"]
+  },
+  {
+    "name_tr": "Birikvim kare (Sesikare)",
+    "name_en": "Sesquiquadrate",
+    "degree": 135,
+    "orb": 3,
+    "nature": {"tr": "Zorlayıcı", "en": "Challenging"},
+    "symbol": "*",
+    "description_tr": "Sesikare açısı, 135 derecelik gerilimli bir yapıdır. Derin gerilim ve dönüşüm ihtiyacı doğurur.",
+    "description_en": "The sesquiquadrate aspect at 135 degrees is tense. It prompts deep tension and the need for transformation.",
+    "keywords_tr": ["Gerilim", "Dönüşüm", "Stres"],
+    "keywords_en": ["Tension", "Transformation", "Stress"]
+  },
+  {
+    "name_tr": "Altmış beşlik (Kvintil)",
+    "name_en": "Quintile",
+    "degree": 72,
+    "orb": 1.5,
+    "nature": {"tr": "Harmonik", "en": "Harmonious"},
+    "symbol": "%",
+    "description_tr": "Kvintil açısı, 72 derecelik yaratıcı bir titreşim sunar. Yeteneklerin ve deha potansiyelinin ifadesini destekler.",
+    "description_en": "The quintile aspect at 72 degrees offers a creative vibration. It supports the expression of talents and genius potential.",
+    "keywords_tr": ["Yaratıcılık", "Deha", "Özgünlük"],
+    "keywords_en": ["Creativity", "Genius", "Originality"]
+  }
+]

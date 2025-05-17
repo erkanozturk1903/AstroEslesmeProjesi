@@ -1,0 +1,37 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .brand-link {
+        background: linear-gradient(45deg, #3b1c71, #7637c5);
+    }
+    
+    /* Astroloji sembollerini içeren özel font */
+    @font-face {
+        font-family: 'AstroSymbols';
+        src: url('{% static "fonts/astrosymbols.woff2" %}') format('woff2');
+    }
+    
+    .astro-symbol {
+        font-family: 'AstroSymbols', sans-serif;
+    }
+</style>
+{% endblock %}
+
+{% block branding %}
+<div class="brand-link">
+    <img src="{% static 'images/astroeslesme_logo.png' %}" alt="AstroEşleşme Logo" class="brand-image">
+    <span class="brand-text">AstroEşleşme</span>
+</div>
+{% endblock %}
+
+{% block nav_sidebar %}
+{{ block.super }}
+{% endblock %}

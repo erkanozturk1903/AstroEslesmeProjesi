@@ -1,0 +1,80 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="jumbotron bg-primary text-white p-4" style="border-radius: 15px;">
+                <h1 class="display-5">AstroEşleşme Yönetim Portalı</h1>
+                <p class="lead">Astroloji, Tarot ve Numeroloji verilerinizi bu panelden yönetebilirsiniz.</p>
+            </div>
+        </div>
+    </div>
+    
+    {% for app in app_list %}
+    <div class="row mb-2">
+        <div class="col-12">
+            <h2 class="text-muted mb-3">{{ app.name }}</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+        {% for model in app.models %}
+        <div class="col-md-3 col-sm-6 col-12 mb-4">
+            {% if model.name == "Astrolojik sistemler" %}
+                <div class="info-box bg-mercury">
+            {% elif model.name == "Burçlar" or model.name == "Burç uyumlulukları" %}
+                <div class="info-box bg-jupiter">
+            {% elif model.name == "Gezegenler" %}
+                <div class="info-box bg-sun">
+            {% elif model.name == "Evler" or model.name == "Gezegen ev yorumları" %}
+                <div class="info-box bg-saturn">
+            {% elif model.name == "Açılar" or model.name == "Gezegen açı yorumları" %}
+                <div class="info-box bg-venus">
+            {% elif "Tarot" in model.name %}
+                <div class="info-box bg-moon">
+            {% elif "Numeroloji" in model.name or "Sayı" in model.name %}
+                <div class="info-box bg-mercury">
+            {% elif forloop.counter0|divisibleby:5 %}
+                <div class="info-box bg-primary">
+            {% elif forloop.counter0|divisibleby:4 %}
+                <div class="info-box bg-success">
+            {% elif forloop.counter0|divisibleby:3 %}
+                <div class="info-box bg-warning">
+            {% elif forloop.counter0|divisibleby:2 %}
+                <div class="info-box bg-danger">
+            {% else %}
+                <div class="info-box bg-info">
+            {% endif %}
+                <span class="info-box-icon">
+                    <i class="fas fa-{{ model.icon|default:'cube' }}"></i>
+                </span>
+                <div class="info-box-content">
+                    <span class="info-box-text">{{ model.name }}</span>
+                    <span class="info-box-number">{{ model.count }}</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                    <div class="progress-description">
+                        {% if model.add_url %}
+                        <a href="{{ model.add_url }}" class="btn btn-sm btn-light">
+                            <i class="fas fa-plus-circle"></i> Ekle
+                        </a>
+                        {% endif %}
+                        {% if model.admin_url %}
+                        <a href="{{ model.admin_url }}" class="btn btn-sm btn-light">
+                            <i class="fas fa-th-list"></i> Listele
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
